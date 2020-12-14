@@ -10,9 +10,10 @@ interface Metadata {
 export default function BlogPosts({ Page }: { Page: ComponentType & { meta: Metadata } }) {
     return (
         <>
-            <Header title={Page.meta.title} />
+            <Header title={Page?.meta?.title} />
             <Page />
-            <p style={{ color: '#666' }}>created by <em style={{ color: '#000' }}>{Page.meta.author}</em> at <em style={{ color: '#000' }}>{Page.meta.date}</em></p>
+            <p style={{ color: '#666' }}>created by <em style={{ color: '#000' }}>{Page?.meta?.author}</em>
+            at <em style={{ color: '#000' }}>{Page?.meta?.date}</em></p>
             <p><Link to="/blog">My Blog</Link></p>
         </>
     )
