@@ -1,4 +1,4 @@
-import { Link } from 'https://deno.land/x/aleph/mod.ts'
+import Link from './link.tsx';
 import React from 'https://esm.sh/react'
 import './style/main.css'
 
@@ -15,10 +15,8 @@ export default function BlogPosts() {
                 <p>Lorem ipsum dolor sit amet sit veroeros sed et blandit consequat sed veroeros lorem et blandit adipiscing feugiat phasellus tempus hendrerit, tortor vitae mattis tempor, sapien sem feugiat sapien, id suscipit magna felis nec elit. className aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos lorem ipsum dolor sit amet.</p>
                 <footer>
                     <ul className="actions">
-                        <li><a href="#" className="button icon solid fa-file-alt">Voir</a></li>
-                        <li><a href="#" className="button alt icon solid fa-comment">33 comments</a></li>
-                        <Link to="./post/bla-bla-bla">Test</Link>
-
+                        <Link replace to="/post/bla-bla-bla"> <button> Voir</button></Link>
+                        {/* <button className=" alt icon solid fa-comment"> 3 com</button> */}
                     </ul>
                 </footer>
             </section>
