@@ -1745,7 +1745,11 @@ input, select, textarea {
 	ul.actions {
 		list-style: none;
 		padding-left: 0;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
 	}
+
 
 		ul.actions li {
 			display: inline-block;
@@ -2337,7 +2341,6 @@ input, select, textarea {
 
 	#copyright {
 		text-align: center;
-		margin: 3em 0 2em 0;
 	}
 
 		#copyright ul.links {

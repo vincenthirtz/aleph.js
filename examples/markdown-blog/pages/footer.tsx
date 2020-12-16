@@ -1,6 +1,7 @@
 import React from 'https://esm.sh/react';
 import './style/main.css';
 
+
 export default function Blog() {
     return (
         <section id="footer">
@@ -49,7 +50,16 @@ export default function Blog() {
                             <p>Front-end developer</p>
                             <footer>
                                 <ul className="actions">
-                                    <li><a href="#" className="button">Find out more</a></li>
+                                    <i className="fab fa-facebook"></i>
+                                    <i className="fab fa-twitter"></i>
+                                    <i className="fab fa-twitch"></i>
+                                    <i className="fab fa-linkedin-in"></i>
+                                    <i className="fab fa-instagram"></i>
+                                    <i className="fab fa-steam"></i>
+                                    <i className="fab fa-spotify"></i>
+                                    <i className="fab fa-github"></i>
+                                    <i className="fab fa-discord"></i>
+                                    <i className="fab fa-cc-paypal"></i>
                                 </ul>
                             </footer>
                         </section>
