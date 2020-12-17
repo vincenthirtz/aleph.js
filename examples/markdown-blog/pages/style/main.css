@@ -1572,14 +1572,17 @@ input, select, textarea {
 		background: #ffffff;
 		border-bottom: solid 1px #ccc;
 		padding: 2.75em 1.75em 2.75em 1.75em;
+		height: 500px;
+		position: relative;
 	}
 
 		.box .image.featured {
 			position: relative;
-			width: auto;
-			left: 1.75em;
-			top: 1.75em;
-			margin: -4.5em 0 4.25em -3.5em;
+			width: fit-content;
+			max-width: 400px;
+			height: auto;
+			margin: auto;
+			margin-bottom: 10px;
 		}
 
 		.box.post header {
@@ -1597,8 +1600,21 @@ input, select, textarea {
 			font-size: 1.25em;
 		}
 
+		.box > p {
+			position: relative;
+			max-height: calc(2.4rem * 3);
+			overflow: hidden;
+			padding-right: 1rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+		}
+
+		.box footer{
+			bottom: 0;
+				position: absolute;
+		}
+
 		.box footer ul.actions {
-			margin-bottom: 0;
 		}
 
 /* Button */

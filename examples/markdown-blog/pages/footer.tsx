@@ -1,6 +1,7 @@
+import 'https://cdn.jsdelivr.net/npm/@ptkdev/webcomponent-instagram-widget@latest/dist/lib/en/instagram-widget.min.js';
 import React from 'https://esm.sh/react';
+import Icon from './icon.tsx';
 import './style/main.css';
-
 
 export default function Blog() {
     return (
@@ -10,35 +11,9 @@ export default function Blog() {
                     <div className="col-8 col-12-medium">
                         <section>
                             <header>
-                                <h2>Blandit nisl adipiscing</h2>
+                                <h2>Mes photos</h2>
                             </header>
-                            <ul className="dates">
-                                <li>
-                                    <span className="date">Jan <strong>27</strong></span>
-                                    <h3><a href="#">Lorem dolor sit amet veroeros</a></h3>
-                                    <p>Ipsum dolor sit amet veroeros consequat blandit ipsum phasellus lorem consequat etiam.</p>
-                                </li>
-                                <li>
-                                    <span className="date">Jan <strong>23</strong></span>
-                                    <h3><a href="#">Ipsum sed blandit nisl consequat</a></h3>
-                                    <p>Blandit phasellus lorem ipsum dolor tempor sapien tortor hendrerit adipiscing feugiat lorem.</p>
-                                </li>
-                                <li>
-                                    <span className="date">Jan <strong>15</strong></span>
-                                    <h3><a href="#">Magna tempus lorem feugiat</a></h3>
-                                    <p>Dolore consequat sed phasellus lorem sed etiam nullam dolor etiam sed amet sit consequat.</p>
-                                </li>
-                                <li>
-                                    <span className="date">Jan <strong>12</strong></span>
-                                    <h3><a href="#">Dolore tempus ipsum feugiat nulla</a></h3>
-                                    <p>Feugiat lorem dolor sed nullam tempus lorem ipsum dolor sit amet nullam consequat.</p>
-                                </li>
-                                <li>
-                                    <span className="date">Jan <strong>10</strong></span>
-                                    <h3><a href="#">Blandit tempus aliquam?</a></h3>
-                                    <p>Feugiat sed tempus blandit tempus adipiscing nisl lorem ipsum dolor sit amet dolore.</p>
-                                </li>
-                            </ul>
+                            <instagram-widget username="@madebynormandy" items-limit="6" grid="3x3"></instagram-widget>
                         </section>
                     </div>
                     <div className="col-4 col-12-medium">
@@ -50,16 +25,14 @@ export default function Blog() {
                             <p>Front-end developer</p>
                             <footer>
                                 <ul className="actions">
-                                    <i className="fab fa-facebook"></i>
-                                    <i className="fab fa-twitter"></i>
-                                    <i className="fab fa-twitch"></i>
-                                    <i className="fab fa-linkedin-in"></i>
-                                    <i className="fab fa-instagram"></i>
-                                    <i className="fab fa-steam"></i>
-                                    <i className="fab fa-spotify"></i>
-                                    <i className="fab fa-github"></i>
-                                    <i className="fab fa-discord"></i>
-                                    <i className="fab fa-cc-paypal"></i>
+                                    <Icon name="twitter" link="https://twitter.com/alukaard76" />
+                                    <Icon name="twitch" link="https://www.twitch.tv/alukaard76" />
+                                    <Icon name="linkedin-in" link="https://www.linkedin.com/in/hirtzvincent/" />
+                                    <Icon name="instagram" link="https://www.instagram.com/madebynormandy/" />
+                                    <Icon name="spotify" link="https://open.spotify.com/user/cousyboy" />
+                                    <Icon name="github" link="https://github.com/vincenthirtz" />
+                                    <Icon name="discord" link="hhttps://discord.gg/b27CdDz8" />
+                                    <Icon name="cc-paypal" link="https://www.paypal.com/paypalme/alurendlargent" />
                                 </ul>
                             </footer>
                         </section>

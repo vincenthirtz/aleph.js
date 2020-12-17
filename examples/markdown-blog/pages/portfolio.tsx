@@ -18,12 +18,21 @@ export default function Portfolio() {
         url: 'https://www.petitboukan.com/'
     },
     {
-        id: 1,
+        id: 2,
         image: '/ds.png',
         name: 'Douceurs salées',
         description: 'Blog sur plusieurs thèmes.',
         url: 'https://douceurs-salees.fr/'
     },
+    {
+        id: 3,
+        image: '/kf.png',
+        name: 'Starteurkit',
+        description: 'Starterkit pour créer un site rapidement et facilement, idéal pour les étudiants.',
+        url: 'https://starteurkit.netlify.app/'
+    },
+
+
     ]
 
 
