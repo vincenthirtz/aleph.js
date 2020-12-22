@@ -12,6 +12,7 @@ export default function Menu() {
 
                 </li>
                 <li className={r.pathname === "/about" ? "current" : ""}><NavLink to="/about">About Me</NavLink></li>
+                <li className={r.pathname === "/contact" ? "current" : ""}><NavLink to="/contact">Contact</NavLink></li>
             </ul>
         </nav>)
 }
